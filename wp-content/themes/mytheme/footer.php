@@ -22,7 +22,7 @@
                 </p>
                 <div class="store-footer-media">
                     <?php
-                    
+
 
                     $menu_header = array(
                         'theme_location' => 'socialamedierikoner',
@@ -101,8 +101,12 @@
     <div class="line">
         <div></div>
     </div>
+    <div class="copyright">
+        <div class="copyright1"><?= date('Y') . " " .   get_bloginfo('name')  ?>. &copy;All rights reserved.</div>
 
-    <div class="copyright"><?= date('Y') . " " .   get_bloginfo('name')  ?>. &copy;All rights reserved.</div>
+    </div>
+
+
 
 </footer>
 <?php wp_footer(); ?>

@@ -1,0 +1,210 @@
+footer{
+    .footer-container{
+        display: flex;
+        height: 447px;
+        background-color: $footer-background-color-primary;
+        .footer-left{
+            width: 314px;
+            height: 241px;
+            margin-left: 72px;
+            margin-top: 32px;
+
+            
+            .store-info{
+                .store-footer{
+                    .store-h3{
+                        font-family: Roboto;
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 33px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: $footer-text-secondary;
+
+
+                    }
+                    .store-p{
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: $footer-text-primary;
+
+                       
+                    }
+
+                }
+                p{
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: $footer-text-secondary;
+
+
+
+
+
+
+                }
+                .store-footer-media{
+                    .menu{
+                        #header-menu{
+                            list-style: none;
+                            display: flex;
+                            .menu-item-69{
+                                a{
+                                    
+
+                                }
+                            }
+                            .menu-item-70{
+                                a{
+                                    
+                                }
+                            }
+                            .menu-item-71{
+                                a{
+                                    
+                                }
+                            }
+                            .menu-item-72{
+                                a{
+                                    
+                                }
+                            }
+
+                        }
+                        .menu-item{
+                            a{
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .footer-center1{
+            .footerheader1{
+
+            }
+            .menu{
+                #header-menu{
+                    .menu-item-59{
+                        a{
+
+                        }
+                    }
+                    .menu-item-63{
+                        a{
+                            
+                        }
+                    }
+                    .menu-item-60{
+                        a{
+                            
+                        }
+                    }
+                    .menu-item-62{
+                        a{
+                            
+                        }
+                    }
+                    .menu-item-61{
+                        a{
+                            
+                        }
+                    }
+
+                }
+            }
+
+        }
+        .footer-center2{
+            .footerheader2{
+
+            }
+            .menu{
+                #header-menu{
+                    .menu-item-64{
+                        a{
+
+                        }
+                    }
+                    .menu-item-67{
+                        a{
+                            
+                        }
+                    }
+                    .menu-item-65{
+                        a{
+                            
+                        }
+                    }
+                    .menu-item-68{
+                        a{
+                            
+                        }
+                    }
+                    .menu-item-66{
+                        a{
+                            
+                        }
+                    }
+
+                }
+            }
+
+        }
+        .footer-right{
+            .footer-blog{
+                .blog1{
+                    .blog1-1{
+                        .span-blog1-1{
+
+                        }
+
+                    }
+                    .blog1-2{
+                        
+                    }
+                    .blog1-3{
+                        
+                    }
+
+
+                }
+                .line{
+
+                }
+                .blog2{
+                    .blog2-1{
+                        .span-blog2-1{
+                            
+                        }
+
+                    }
+                    .blog2-2{
+                        
+                    }
+                    .blog2-3{
+                        
+                    }
+
+                }
+            }
+
+        }
+    }
+    .line{
+
+    }
+    .copyright{
+
+    }
+}

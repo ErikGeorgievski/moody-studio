@@ -98,7 +98,7 @@
 
 
     </div>
-    <div class="linje">
+    <div class="line">
         <div></div>
     </div>
 

@@ -1,0 +1,40 @@
+//GLOBAL
+$content-width: calc(100% - 154px);
+
+//FONTS
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+
+  $regular-font: 'Roboto-Regular';
+  $medium-font: 'Roboto-Medium';
+  $light-font: 'Roboto-Light';
+  $bold-font: 'Roboto-Bold';
+
+
+
+
+//COLORS
+$header-border-lines: #323334;
+$primary-font-color: #323334;
+$background-color: #FFFFFF;

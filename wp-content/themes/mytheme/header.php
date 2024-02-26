@@ -1,27 +1,29 @@
 <html>
-    <head>
-        <title><?= get_option("blogname");?></title>
-        <?php wp_head();?>
-        <script src="https://kit.fontawesome.com/c00b9243bd.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <?php wp_body_open();?>
-        <?php if (!empty(get_option('store_message'))) : ?>
-            <div class="site-message">
-                <span><?= get_option('store_message'); ?> </span>
-            </div>
-            <?php endif; ?>
-        <header>
+
+<head>
+    <title><?= get_option("blogname"); ?></title>
+    <?php wp_head(); ?>
+</head>
+
+<body>
+    <?php wp_body_open(); ?>
+    <?php if (!empty(get_option('store_message'))) : ?>
+        <div class="site-message">
+            <span><?= get_option('store_message'); ?> </span>
+        </div>
+    <?php endif; ?>
+    <header>
+        <div class="upper-header">
             <div class="column-50">
-                
-                
+
+                <a href="/"><span class="logo-text">MOODY STUDIO</span></a>
 
             </div>
             <div class="column-50">
                 <?php
 
                 $menu_header = array(
-                    'theme_location' => 'huvudmeny',
+                    'theme_location' => 'menyikoner',
                     'menu_id' => 'header-menu',
                     'container' => 'nav',
                     'container_class' => 'menu'
@@ -29,18 +31,20 @@
                 wp_nav_menu($menu_header);
                 ?>
             </div>
-            <div class="column-50 menu-icons">
+        </div>
 
+        <div class="lower-header">
             <?php
 
-                $menu_header = array(
-                    'theme_location' => 'menyikoner',
-                    'menu_id' => 'header-menu',
-                    'container' => 'nav',
-                    'container_class' => 'menu menu-nav'
-                );
-                wp_nav_menu($menu_header);
-                ?>
-                
-            </div>
-        </header>
+            $menu_header = array(
+                'theme_location' => 'huvudmeny',
+                'menu_id' => 'header-menu',
+                'container' => 'nav',
+                'container_class' => 'menu'
+            );
+            wp_nav_menu($menu_header);
+            ?>
+        </div>
+
+
+    </header>

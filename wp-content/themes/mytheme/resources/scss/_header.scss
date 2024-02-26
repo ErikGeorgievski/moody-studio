@@ -30,7 +30,20 @@ header{
                 }
             }
             
-            
+            .basket-item-count {
+                background-color: #F2994A;
+                color: #fff;
+                border-radius: 50%;
+                padding: 4px 8px;
+                font-family: $bold-font;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 11.72px;
+                position: relative;
+                top: 8px;
+                right: 130px;
+                
+            }
     
             nav {
                 display: flex;
@@ -101,6 +114,7 @@ header{
                             background-position: center center;
                             background-repeat: no-repeat;
                         }
+                        
                     }
 
                     &.favorites-icon {

@@ -30,6 +30,12 @@
                 );
                 wp_nav_menu($menu_header);
                 ?>
+
+                <div class="basket-item-count">
+                    <span class="cart-items-count count">
+                        <?php echo WC()->cart->get_cart_contents_count(); ?>
+                    </span>
+                </div>
             </div>
         </div>
 

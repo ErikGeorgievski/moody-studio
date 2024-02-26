@@ -66,7 +66,7 @@ function mytheme_add_settings_init(){
     );
     add_settings_field(
         'company_hotline',
-        'Hotline',
+        'E-mail',
         'mytheme_section_general_setting',
         'store',
         'store_general',

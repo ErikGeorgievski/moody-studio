@@ -21,6 +21,8 @@ function my_theme_init(){
         'huvudmeny' => 'huvudmeny',
         'menyikoner'=>'menyikoner',
         'footer_meny' => 'footer_meny',
+        'footer_meny2' => 'footer_meny2',
+        'socialamedierikoner'=>'socialamedierikoner',
      
     );
 

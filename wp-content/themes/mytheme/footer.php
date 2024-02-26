@@ -24,7 +24,7 @@
             echo "<div class='footerheader1'>Links</div>";
 
             $menu_header = array(
-                'theme_location' => 'huvudmeny',
+                'theme_location' => 'footer_meny',
                 'menu_id' => 'header-menu',
                 'container' => 'nav',
                 'container_class' => 'menu'
@@ -42,7 +42,7 @@
 
             echo "<div class='footerheader2'>Help</div>";
             $menu_header = array(
-                'theme_location' => 'footer_meny',
+                'theme_location' => 'footer_meny2',
                 'menu_id' => 'footer-menu',
                 'container' => 'nav',
                 'container_class' => 'menu'

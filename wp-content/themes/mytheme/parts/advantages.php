@@ -1,6 +1,4 @@
 <?php
-
-// Define shortcode function
 function display_advantages_shortcode() {
     ob_start(); ?>
 
@@ -22,5 +20,5 @@ function display_advantages_shortcode() {
     <?php
     return ob_get_clean();
 }
-// Register shortcode
+
 

@@ -15,12 +15,21 @@
     
     .woocommerce-cart-form {
         width: 60%;
+
+        .shop_table{
+            border: none;
+            .actions{
+                border-top: none;
+            }
+        }
         
     }
 
     .cart-collaterals {
         width: 40%;
         background-color: rgba(236, 235, 233, 0.7);
+        margin-bottom: 50px;
+        padding-bottom: 50px;
         .cart_totals {
             width: 85%;
 
@@ -75,6 +84,24 @@
                         background-color: #FFFFFF;
                         border: 1px solid $primary-font-color;
                     }
+                }
+            }
+
+            .wc-proceed-to-checkout{               
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 416px;
+                    height: 54px;
+                    text-align: center;
+                    background-color: $primary-font-color;
+                    font-family: $bold-font;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
                 }
             }
         }

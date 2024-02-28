@@ -82,4 +82,21 @@ function add_custom_inputs_above_subtotal() {
 //trying to remove the coupon code form
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 
+//changing the proceed to checkout text on the button to Continue to checkout
+add_filter( 'woocommerce_cart_totals_after_order_total', 'change_checkout_button_text' );
+function change_checkout_button_text( $cart_totals ) {
+    if ( is_cart() ) {
+        echo '<script>jQuery(document).ready(function($) { $("a.checkout-button").text("Continue to Checkout"); });</script>';
+    }
+}
+
+add_filter( 'gettext', 'change_subtotal_text', 20, 3 );
+function change_subtotal_text( $translated_text, $text ) {
+    if ( $text === 'Subtotal' ) {
+        $translated_text = 'Order value';
+    }
+    return $translated_text;
+}
+
+
 

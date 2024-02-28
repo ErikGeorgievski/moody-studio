@@ -51,13 +51,26 @@ function apply_free_shipping_based_on_order_amount() {
 
 
 // ------------     CART HOOKS         -------------------- //
-// Change "Subtotal" text to "Order value"
-add_filter( 'woocommerce_cart_subtotal', 'change_subtotal_text' );
-function change_subtotal_text( $subtotal ) {
-    return str_replace( 'Subtotal', 'Order value', $subtotal );
+add_action('woocommerce_cart_totals_before_order_total', 'add_custom_inputs_above_subtotal');
+
+function add_custom_inputs_above_subtotal() {
+    ?>
+    <div class="custom-inputs">
+        <div class="discount-code">
+            <p>ADD A DISCOUNT CODE</p>
+            <input type="text" name="discount_code">
+            <button>ADD</button>
+        </div>
+
+        <div class="login-offers">
+            <p>Log in to use your member offers.</p>
+            <button class="log-in-btn">LOG IN</button>
+        </div>
+    </div>
+    <?php
 }
 
-// Remove "Cart totals" text
-add_filter( 'woocommerce_cart_totals_heading', '__return_empty_string' );
+//trying to remove the coupon code form
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 
 

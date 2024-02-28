@@ -1,0 +1,83 @@
+.shopping-bag-text{
+    text-align: center;
+    font-family: $medium-font;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 39.84px;
+    color: $primary-font-color;
+}
+.woocommerce {
+    margin: auto;
+    width: $content-width;
+    display: flex;
+    flex-wrap: nowrap;
+
+    
+    .woocommerce-cart-form {
+        width: 60%;
+        
+    }
+
+    .cart-collaterals {
+        width: 40%;
+        background-color: rgba(236, 235, 233, 0.7);
+        .cart_totals {
+            width: 85%;
+
+            .custom-inputs{
+                padding-top: 50px;
+                padding-bottom: 30px;
+                .discount-code{
+                    p{
+                        font-family:  $light-font;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 21.09px;
+                        color: $primary-font-color;
+                    }
+                    input{
+                        width: 345px;
+                        height: 54px;
+                        background-color: #fff;
+                        border: 1px solid $primary-font-color;
+                    }
+                    button{
+                        background-color: #323334;
+                        width: 65px;
+                        height: 54px;
+                        font-family: $bold-font;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 16.41px;
+                        color: #FFFFFF;
+                        margin-left: -5px;
+                        border: 1px solid $primary-font-color;
+
+                    }
+                }
+                .login-offers{
+                    p{
+                        font-family:  $light-font;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 21.09px;
+                        color: $primary-font-color;
+                    }
+                    button{
+                        width: 416px;
+                        height: 54px;
+                        text-align: center;
+                        font-family: $bold-font;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 18.75px;
+                        color: $primary-font-color;
+                        background-color: #FFFFFF;
+                        border: 1px solid $primary-font-color;
+                    }
+                }
+            }
+        }
+    }
+}
+

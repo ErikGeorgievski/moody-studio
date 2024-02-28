@@ -152,3 +152,5 @@ function show_category_names( $atts, $content = null) {
 }
 add_shortcode( 'show_categories', 'show_category_names' );
 
+
+

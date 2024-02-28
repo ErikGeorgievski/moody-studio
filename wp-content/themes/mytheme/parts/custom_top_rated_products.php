@@ -2,7 +2,6 @@
 function display_top_rated_products_shortcode($atts) {
     ob_start();
     
-    // Default attributes
     $atts = shortcode_atts(array(
         'limit' => 5, 
     ), $atts);
@@ -19,9 +18,15 @@ function display_top_rated_products_shortcode($atts) {
 
     $output = '<div class="top-rated-products">';
     if ($query->have_posts()) {
+        $output .= '<div class="product-row">';
+        $count = 0;
         while ($query->have_posts()) {
             $query->the_post();
-            
+            $count++;
+            if ($count > 3) {
+                $output .= '</div><div class="product-row">';
+                $count = 1;
+            }
             $output .= '<div class="product">';
             $output .= '<div class="product-details">';
             $output .= '<div class="product-info">';
@@ -33,6 +38,7 @@ function display_top_rated_products_shortcode($atts) {
             $output .= '<div class="product-thumbnail">' . get_the_post_thumbnail() . '</div>';
             $output .= '</div>';
         }
+        $output .= '</div>';
         wp_reset_postdata();
 
         $output .= '<div class="load-more-wrapper">';
@@ -41,8 +47,6 @@ function display_top_rated_products_shortcode($atts) {
     }
     $output .= '</div>';
     $output = ob_get_clean();
-
-
 
     return $output;
 }

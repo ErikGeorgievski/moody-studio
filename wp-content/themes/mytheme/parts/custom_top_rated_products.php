@@ -27,14 +27,14 @@ function display_top_rated_products_shortcode($atts) {
             $output .= '<div class="product-info">';
             $output .= '<h2>' . get_the_title() . '</h2>';
             $output .= '<span class="product-price">' . wc_price(get_post_meta(get_the_ID(), '_price', true)) . '</span>';
-            $output .= '<span class="product-rating">' . wc_get_rating_html(get_post_meta(get_the_ID(), '_wc_average_rating', true)) . '</span>';
+            $output .= '<span class="product-rating">' . my_theme_stars_rating() . '</span>';
             $output .= '</div>';
             $output .= '</div>';
             $output .= '<div class="product-thumbnail">' . get_the_post_thumbnail() . '</div>';
             $output .= '</div>';
         }
         wp_reset_postdata();
-        
+
         $output .= '<div class="load-more-wrapper">';
         $output .= '<button id="load-more-button">Load More</button>';
         $output .= '</div>';

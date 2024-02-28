@@ -1,4 +1,19 @@
 main{
+    .my-custom-rating{
+        height: 24px;
+        width: calc(24px * 5);
+        background-image: url("../images/star_unfilled.png");
+        background-size: auto 100%;
+        background-repeat: repeat-x;
+
+        .fill{
+            width: 0%;
+            height: 100%;
+            background-image: url("../images/star_filled.png");
+            background-size: auto 100%;
+            background-repeat: repeat-x;   
+        }
+    }
     .advantages-section{
         .advantages{
             display: flex;
@@ -254,6 +269,9 @@ main{
                             line-height: 28.13px;
                             color: $primary-font-color;
                         }
+                    }
+                    .wc-block-components-product-rating__reviews_count{
+                        display: none;
                     }
                 }
             }

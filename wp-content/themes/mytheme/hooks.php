@@ -5,6 +5,15 @@ function remove_default_loop_rating() {
     remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
 }
 
+//AJAX for updating cart totals
+add_action('wp_ajax_update_cart_count', 'update_cart_count_ajax');
+add_action('wp_ajax_nopriv_update_cart_count', 'update_cart_count_ajax');
+
+function update_cart_count_ajax() {
+    echo WC()->cart->get_cart_contents_count();
+    wp_die();
+}
+
 
 //remove default WooCommerce star rating
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);

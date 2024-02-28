@@ -2,13 +2,12 @@
 
 require_once("settings.php");
 require_once("shortcodes.php");
-// require_once("ajax.php");
+require_once("ajax.php");
 
 function my_theme_enqueue() {    
     $data = array(
         "name" => get_option("blogname"),
         "option" => get_option("myoption"),
-        'wc_ajax_url' => admin_url( 'admin-ajax.php' ),
 
     );
     wp_localize_script("app", "myvariables", $data);

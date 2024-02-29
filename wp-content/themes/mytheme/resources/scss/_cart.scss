@@ -21,15 +21,16 @@
         .shop_table{
             border: none;
             position: relative;
+            height: 180px;
             .actions{
                 border-top: none;
             }
 
             .woocommerce-cart-form__cart-item{
-                height: 180px;
+                height: 100%;
 
                 .product-thumbnail{
-                    width: 30%;
+                    width: 40%;
                     height: 100%;
                 }
             }
@@ -51,19 +52,54 @@
                 top: 0;
                 right: 0;
             }
+            .product-remove {
+                .remove{
+                    color: $primary-font-color !important; 
+                    font-size: 30px !important;
+                    &:hover{
+                        background-color: transparent !important;
+                    }
+                }
+            }
+
 
             .product-name,
             .product-price,
             .product-quantity,
-            .product-subtotal{
+            .product-info{
                 display: block;
+            }
+
+            .product-price{
+                .amount{
+                    font-family: $medium-font;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21.09px;
+                    color: $primary-font-color;
+                }
+            }
+
+            .product-info{
+                font-family: $light-font;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 16.41px;
+                color: $primary-font-color;
             }
             .product-quantity{
                 display: flex;
+                width: 31px;
+                height: 31px;
+                
                 a{
                     display: flex;
                     flex-direction: row;
                     padding-right: 15px;
+                    border: 1px solid $primary-font-color;
+                    img{
+                        padding-left: 6px;
+                    }
                 }
                 .quantity{
                     display: flex;
@@ -78,6 +114,10 @@
         background-color: rgba(236, 235, 233, 0.7);
         margin-bottom: 50px;
         padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .cart_totals {
             width: 85%;
@@ -132,6 +172,37 @@
                         color: $primary-font-color;
                         background-color: #FFFFFF;
                         border: 1px solid $primary-font-color;
+                    }
+                }
+            }
+            .shop_table{
+                border: none;
+                margin: auto;
+                .cart-subtotal,
+                .shipping,
+                .order-total{
+                    th{
+                        font-family: $medium-font;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+                .shipping{
+                    .woocommerce-shipping-destination,
+                    .woocommerce-shipping-calculator{
+                        display: none;
+                    }
+                }
+                .order-total{
+                    .includes_tax{
+                        display: none;
+                    }
+                }
+                .woocommerce-shipping-totals,
+                .order-total{
+                    th,td{
+                        border-top: none;
                     }
                 }
             }

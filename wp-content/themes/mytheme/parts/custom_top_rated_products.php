@@ -3,7 +3,7 @@ function display_top_rated_products_shortcode($atts) {
     ob_start();
     
     $atts = shortcode_atts(array(
-        'limit' => 5, 
+        'limit' => 6, 
     ), $atts);
 
     $args = array(
@@ -23,7 +23,7 @@ function display_top_rated_products_shortcode($atts) {
         while ($query->have_posts()) {
             $query->the_post();
             $count++;
-            if ($count > 3) {
+            if ($count >= 3) {
                 $output .= '</div><div class="product-row">';
                 $count = 1;
             }

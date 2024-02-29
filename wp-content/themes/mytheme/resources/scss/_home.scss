@@ -396,9 +396,40 @@ main{
         .columns-4{
             .products {
                 .product {
-                    width: 29.5%;
+                    display: flex;
+                    width: 29%;
+                    .woocommerce-LoopProduct-link{
+                        display: flex;
+                        img{
+                            height: 308px;
+                            width: 198px;
+                        }
+                        .woocommerce-loop-product__title,
+                        .my-custom-rating,
+                        .price{
+                            display: block;
+                        }   
+                        .woocommerce-loop-product__title{
+                            font-family: $bold-font;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 21.09px;
+                            color: $primary-font-color;
+                            
+                        }
+
+                        .price{
+                            font-family: $bold-font;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 28.13px;
+                            color: $primary-font-color;
+                            
+                        }
+
+                    }
                     .button{
-                        display: none;
+                        display: block;
                     }
                 }
             }
@@ -406,5 +437,48 @@ main{
         
     }
 
+
+    .newsletter-section{
+        width: $content-width;
+        margin: auto;
+        .newsletter-subscription-form{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left-content{
+                .sign-up-text{
+                    font-family: $bold-font;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 32.81px;
+                    color: $primary-font-color;
+                }
+                .subscribe-text{
+                    font-family: $regular-font;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28.13px;
+                    color: $primary-font-color;
+                    margin-top: -20px;
+                }
+            }
+
+            .right-content{
+                input{
+                    width: 515px;
+                    height: 50px;
+                    border: 1px solid $primary-font-color;
+                    padding: 20px;
+                }
+                button{
+                    width: 85px;
+                    height: 50px;
+                    background-color: $primary-font-color;
+                    border: 1px solid $primary-font-color;
+                    margin-left: -5px;
+                }
+            }
+        }
+    }
     
 }

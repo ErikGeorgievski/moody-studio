@@ -1,0 +1,48 @@
+{
+  "resources/fonts/roboto/Roboto-Bold.ttf": {
+    "file": "assets/Roboto-Bold.ttf",
+    "src": "resources/fonts/roboto/Roboto-Bold.ttf"
+  },
+  "resources/fonts/roboto/Roboto-Light.ttf": {
+    "file": "assets/Roboto-Light.ttf",
+    "src": "resources/fonts/roboto/Roboto-Light.ttf"
+  },
+  "resources/fonts/roboto/Roboto-Medium.ttf": {
+    "file": "assets/Roboto-Medium.ttf",
+    "src": "resources/fonts/roboto/Roboto-Medium.ttf"
+  },
+  "resources/fonts/roboto/Roboto-Regular.ttf": {
+    "file": "assets/Roboto-Regular.ttf",
+    "src": "resources/fonts/roboto/Roboto-Regular.ttf"
+  },
+  "resources/images/account.svg": {
+    "file": "assets/account.svg",
+    "src": "resources/images/account.svg"
+  },
+  "resources/images/cart.svg": {
+    "file": "assets/cart.svg",
+    "src": "resources/images/cart.svg"
+  },
+  "resources/images/heart.svg": {
+    "file": "assets/heart.svg",
+    "src": "resources/images/heart.svg"
+  },
+  "resources/images/search.svg": {
+    "file": "assets/search.svg",
+    "src": "resources/images/search.svg"
+  },
+  "resources/images/star_filled.png": {
+    "file": "assets/star_filled.png",
+    "src": "resources/images/star_filled.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/scss/app.scss": {
+    "file": "assets/app.css",
+    "isEntry": true,
+    "src": "resources/scss/app.scss"
+  }
+}

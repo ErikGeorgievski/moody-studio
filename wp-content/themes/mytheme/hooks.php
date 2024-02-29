@@ -99,4 +99,3 @@ function change_subtotal_text( $translated_text, $text ) {
 }
 
 
-

@@ -143,14 +143,49 @@ function show_category_names( $atts, $content = null) {
         
         <div class="inner-div2">
             <h3 class="h3-text1">BEDROOM</h3>
-            <p class="p-text2"> Its easy to transform your bedrom interior with our great selection of accessories.  <span class="models">Models</span> <span class="prod">Products</span></p> 
+            <p class="p-text2"> Its easy to transform your bedrom interior with our great selection of accessories. </p> 
             
         </div>
        
     </div>
+    <div class="link">
+        <div class="text10"> <span class="models">Models</span> <span class="prod">Products</span> </div>
+    </div>
     <?php
 }
 add_shortcode( 'show_categories', 'show_category_names' );
+
+
+
+
+
+
+add_action('init', function(){
+    remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+    add_action( 'woocommerce_before_shop_loop_item_title', 'custom_woocommerce_template_loop_product_thumbnail', 10);
+});
+
+if ( ! function_exists( 'custom_woocommerce_template_loop_product_thumbnail' ) ) {
+    function custom_woocommerce_template_loop_product_thumbnail() {
+        echo custom_woocommerce_get_product_thumbnail();
+    } 
+}
+
+if ( ! function_exists( 'custom_woocommerce_get_product_thumbnail' ) ) {   
+    function custom_woocommerce_get_product_thumbnail( $size = 'shop_catalog' ) {
+        global $post, $woocommerce;
+        $output = '';
+
+        if ( has_post_thumbnail() ) {
+            $src = get_the_post_thumbnail_url( $post->ID, $size );
+            $output .= '<img class="lazy" src="your-placeholder-image.png" data-src="' . $src . '" data-srcset="' . $src . '" alt="Lazy loading image">';
+        } else {
+             $output .= wc_placeholder_img( $size );
+        }
+
+        return $output;
+    }
+}
 
 
 

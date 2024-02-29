@@ -14,6 +14,7 @@
             background-color: #DCE1DA;
             height: 265px;
             align-items: center;
+            margin-bottom: 50px;
             .inner-div{
                 display: flex;
                 flex-direction: column;
@@ -62,7 +63,8 @@
             }
         }
         .custom-div2{
-            margin-left: 120px;
+            margin-left: -20px;
+            margin-bottom: 10px;
             .inner-div2{
                 .h3-text1{
                     font-family: Roboto;
@@ -75,34 +77,15 @@
 
                 }
                 .p-text2{
-                    font-family: Roboto-Bold;
+                    font-family: Roboto-regular;
                     font-size: 18px;
                     font-weight: 300;
                     line-height: 21px;
                     letter-spacing: 0em;
                     text-align: left;
                     color:#323334c0;
-                    .models{
-                        font-family: Roboto-regular;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 19px;
-                        letter-spacing: 0em;
-                        text-align: left;
-                        color: #FE1313;
-
-
-
-                    }
-                    .prod{
-                        font-family: Roboto-regular;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 19px;
-                        letter-spacing: 0em;
-                        text-align: left;
-
-                    }
+                    
+                    
                     
     
     
@@ -112,30 +95,89 @@
             
 
         }
+        .link{
+            margin-left: 1130px;
+            
+            .text10{
+                margin-bottom: 10px;
+                .models{
+                    font-family: Roboto-regular;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #FE1313;
+                    margin-right: 50px;
+                    cursor: pointer;
+                    
+
+
+                }
+                .prod{
+                    font-family: Roboto-regular;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    cursor: pointer;
+
+                }
+
+            }
+        }
         .page-description{
             margin-left: -1150px;
-            margin-top: -140px;
+            margin-top: -210px;
+
+            .dgwt-wcas-search-wrapp{
+                margin-right: -400px;
+                margin-top: 200px;
+                
+                
+            }
            
             ul{
                 list-style: none;
+                margin-top: -250px;
                 li{
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
+                    
                     a{
                         text-decoration: none;
+                        color: $filter-text-color-primary;
                     
                     }
                     &:nth-child(1){
                         margin-left: -40px;
                             
                             a{
-                                color: red;
+                                font-family: Roboto-bold;
+                                font-size: 22px;
+                                font-weight: 700;
+                                line-height: 26px;
+                                letter-spacing: 0em;
+                                text-align: left;
+
+
+
                             }
                     }
                     &:nth-child(2){
                         margin-left: -40px;
+                        margin-bottom: 20px;
                             
                         a{
-                            color: red;
+                            font-family: Roboto-regular;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            
+                            
+                            
                         }
 
                     
@@ -144,112 +186,128 @@
                         margin-left: -40px;
                             
                         a{
-                            color: red;
+                            font-family: Roboto-bold;
+                            font-size: 22px;
+                            font-weight: 700;
+                            line-height: 26px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                           
                         }
                     }
                     &:nth-child(4){
                         margin-left: -40px;
+                        
                             
                         a{
-                            color: red;
+                            color: $filter-text-color-active;
+                            
                         }
                     }
                     &:nth-child(5){
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(6){
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(7){
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(8){
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(9){
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(10){
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(11){
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(12){
                         margin-left: -40px;
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(13){
                         margin-left: -40px;
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(14){
                         margin-left: -40px;
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(15){
                         margin-left: -40px;
+                        margin-bottom: 20px;
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(16){
                         margin-left: -40px;
                             
                         a{
-                            color: red;
+                            font-family: Roboto-bold;
+                            font-size: 22px;
+                            font-weight: 700;
+                            line-height: 26px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                           
                         }
                     }
                     &:nth-child(17){
                         margin-left: -40px;
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(18){
                         margin-left: -40px;
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     &:nth-child(19){
                         margin-left: -40px;
+                        margin-bottom: 40px;
                             
                         a{
-                            color: red;
+                            
                         }
                     }
                     
@@ -260,10 +318,17 @@
             }
             .filter-1{
                 .gender1{
+                    font-family: Roboto-bold;
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 26px;
+                    letter-spacing: 0em;
+                    text-align: left;
                     
 
                 }
                 .man{
+                    margin-top: -10px;
                     #myCheckbox1{
 
                     }
@@ -284,13 +349,22 @@
 
                 }
                 .color-filter{
+                    margin-top: 30px;
+                    margin-bottom: 30px;
                     .color{
+                        font-family: Roboto-bold;
+                        font-size: 22px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                        text-align: left;
                         
 
 
                     }
                     .color1{
                         margin-bottom: 15px;
+                        
                         
                         span{
                             display: inline-block;
@@ -415,6 +489,12 @@
                 }
                 .price-filter{
                     .price{
+                        font-family: Roboto-bold;
+                        font-size: 22px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                        text-align: left;
                         
                     }
                     .price1-1{
@@ -474,19 +554,301 @@
         }
     }
     .woocommerce-result-count{
-        
+        display: none;
     }
     .woocommerce-ordering{
+        
 
     }
-    .products{
+    .columns-4{
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         gap: 20px; 
         width: 70%;
         margin-left:25%;
         margin-bottom: 100px;
-        margin-top: -900px;
+        margin-top: -780px;
+        .product{
+            list-style: none;
+            
+            a{
+                text-decoration: none;
+                img{
+                    object-fit: cover;
+                    background-size: cover;
+                    
+
+                }
+                h2{
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 21px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                    color: $filter-text-color-primary;
+
+
+                   
+
+
+                }
+                .variation-color{
+                    margin-bottom: 20px;
+                    
+                    
+                    .var1{
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        
+                        border-radius: 50%;
+                        margin-right: 5px;
+
+
+                    }
+                    .var2{
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        
+                        border-radius: 50%;
+                        margin-right: 5px;
+
+                        
+                    }
+                    .var3{
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        
+                        border-radius: 50%;
+                        
+                    }
+                }
+                
+                .my-custom-rating{
+                    display: none;
+                }
+                
+            }
+            .add_to_cart_button{
+                display: none;
+            }
+            .price{
+                font-family: Roboto-Bold;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $filter-text-color-primary;
+
+            }
+
+
+        }
+        .post-88{
+            .variation-color{
+                .var1{
+                    background-color: #9F9189;
+
+                }
+                .var2{
+                    
+                }
+                .var3{
+                    
+                }
+            }
+
+        }
+        .post-162{
+            .variation-color{
+                .var1{
+                    background-color: #81352D;
+
+                }
+                .var2{
+                    background-color: #A7A689;
+                    
+                }
+                .var3{
+                    
+                }
+            }
+
+        }
+        .post-154{
+            .variation-color{
+                .var1{
+                    background-color: #A04F48;
+
+                }
+                .var2{
+                    background-color: #7B3D39;
+                    
+                }
+                .var3{
+                    
+                }
+            }
+
+        }
+        .post-158{
+            .variation-color{
+                .var1{
+                    
+
+                }
+                .var2{
+                   
+                    
+                }
+                .var3{
+                    
+                }
+            }
+
+        }
+        .post-156{
+            .variation-color{
+                .var1{
+                    background-color: #9B9A98;
+
+                }
+                .var2{
+                    background-color:#A2A285;
+                    
+                }
+                .var3{
+                    
+                }
+            }
+
+        }
+        .post-90{
+            .variation-color{
+                .var1{
+                    background-color: #F2C94C;
+
+                }
+                .var2{
+                    background-color: #828282;
+                    
+                }
+                .var3{
+                    
+                }
+            }
+
+        }
+        .post-170{
+            .variation-color{
+                .var1{
+                    background-color: #DDEDD6;
+
+                }
+                .var2{
+                    background-color: #F3DDD8;
+                    
+                }
+                .var3{
+                    background-color: #C4BDB6;
+                    
+                }
+            }
+
+        }
+        .post-168{
+            .variation-color{
+                .var1{
+                    background-color: #D1C3B1;
+
+                }
+                .var2{
+                    background-color: #DDC1B2
+                    ;
+                    
+                }
+                .var3{
+                    
+                }
+            }
+
+        }
+        .post-92{
+            .variation-color{
+                .var1{
+                    background-color: #ACAD92;
+
+                }
+                .var2{
+                    background-color: #D4CEBF;
+                    
+                }
+                .var3{
+                    
+                }
+            }
+
+        }
+        .post-160{
+            .variation-color{
+                .var1{
+                    background-color: #633733;
+
+                }
+                .var2{
+                    background-color: #BBBAC0;
+                    
+                }
+                .var3{
+                    background-color:#D8B4A2;
+                    
+                }
+            }
+
+        }
+        .post-85{
+            .variation-color{
+                .var1{
+                    background-color: #9E6344;
+
+                }
+                .var2{
+                    background-color: #8F8E73;
+                    
+                }
+                .var3{
+                    
+                }
+            }
+
+        } .post-164{
+            .variation-color{
+                .var1{
+                    background-color: #888687;
+
+                }
+                .var2{
+                    background-color: #B6A899;
+                    
+                }
+                .var3{
+                    background-color:#A6A68B ;
+                    
+                }
+            }
+
+        }
+
+        
+
+        
+       
+       
 
     }
 

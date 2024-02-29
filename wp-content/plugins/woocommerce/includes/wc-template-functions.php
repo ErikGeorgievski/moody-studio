@@ -1175,7 +1175,9 @@ if ( ! function_exists( 'woocommerce_template_loop_product_title' ) ) {
 	 */
 	function woocommerce_template_loop_product_title() {
 		echo '<h2 class="' . esc_attr( apply_filters( 'woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title' ) ) . '">' . get_the_title() . '</h2>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo '<div class="variation-color"><span class="var1"></span><span class="var2"></span><span class="var3"></span></div>';
 	}
+	
 }
 if ( ! function_exists( 'woocommerce_template_loop_category_title' ) ) {
 

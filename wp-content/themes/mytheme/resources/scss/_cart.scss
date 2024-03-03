@@ -20,7 +20,7 @@
         padding-right: 285px;
         .shop_table{
             border: none;
-            position: relative;
+            
             height: 180px;
             .actions{
                 border-top: none;
@@ -28,6 +28,10 @@
 
             .woocommerce-cart-form__cart-item{
                 height: 100%;
+                position: relative;
+                td{
+                    border-top: none;
+                }
 
                 .product-thumbnail{
                     width: 40%;

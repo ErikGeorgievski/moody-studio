@@ -1,5 +1,6 @@
 import "./update-cart-total-items-basket";
 import "./lazy-load-products";
+import"./scroll";
 
 jQuery(document).ready(function($) {
     $('.woocommerce').before($('.woocommerce-notices-wrapper'));
@@ -26,3 +27,13 @@ jQuery(document).ready(function($) {
 
 
 
+//hiding the labels 
+//changing the default text on dropdown menu on product page
+jQuery(document).ready(function($) {
+    $('.variations label').hide();
+    $('.variations select').each(function() {
+        var attributeLabel = $('label[for="' + $(this).attr('id') + '"]').text().replace(':', ''); 
+        var newText = 'Select ' + attributeLabel;
+        $(this).prepend('<option value="">' + newText + '</option>');
+    });
+});

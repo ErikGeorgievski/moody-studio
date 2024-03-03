@@ -99,3 +99,58 @@ function change_subtotal_text( $translated_text, $text ) {
 }
 
 
+
+
+
+
+//dsplay mini version of product photo after short description in cart
+add_action('woocommerce_before_add_to_cart_form', 'display_mini_product_photo');
+
+function display_mini_product_photo() {
+    global $product;
+     $thumbnail = $product->get_image(array(52, 72));
+    echo '<div class="mini-product-photo">' . $thumbnail . '</div>';
+
+    echo '<div class="available-in-stores"> <img src="' . get_template_directory_uri() . '/resources/images/pin.svg" ><span class"available-text"> Not available in stores</span></div>';
+  
+}
+
+add_filter('woocommerce_product_single_add_to_cart_text', 'change_add_to_cart_button_text');
+
+function change_add_to_cart_button_text($text) {
+    return __('Add to Shopping Bag', 'woocommerce');
+}
+
+
+
+
+//RELATED PRODUCTS MODIFICATION
+//add custom related products section
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+
+function custom_related_products_section() {
+    echo '<div class="custom-related-products">';
+    echo '<h2>Products you may like</h2>';
+    echo '<div class="related-products-wrapper">';
+    echo '<div class="related-products-container">';
+    woocommerce_output_related_products(array(
+        'posts_per_page' => -1,
+        'columns' => 6,
+    ));
+    echo '</div>';
+    echo '</div>';
+    echo '<button class="prev-arrow">&#10094;</button>';
+    echo '<button class="next-arrow">&#10095;</button>';
+    echo '</div>';
+}
+add_action('woocommerce_after_single_product_summary', 'custom_related_products_section');
+
+
+
+
+//remove default meta section
+function remove_default_product_meta() {
+    remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+}
+add_action( 'woocommerce_single_product_summary', 'remove_default_product_meta', 5 );
+

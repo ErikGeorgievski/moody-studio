@@ -137,7 +137,7 @@ main{
                     justify-content: center;
                     align-items: center;
                     padding-left: 70px;
-
+                    text-transform: uppercase;
                 }
             }
 
@@ -441,6 +441,7 @@ main{
     .newsletter-section{
         width: $content-width;
         margin: auto;
+        padding-bottom: 30px;
         .newsletter-subscription-form{
             display: flex;
             justify-content: space-between;

@@ -104,12 +104,12 @@ do_action('woocommerce_before_cart'); ?>
 							$product = $_product;
 							echo '<span class="sku">Art. No.:</span> ' . $product->get_sku() . '<br>';
 
-							$attributes = $product->get_attributes();
-							foreach ($attributes as $attribute) {
-								echo '<span class="size">Size:</span> ' . $attribute['value'] . '<br>';
+							// $attributes = $product->get_attributes();
+							// foreach ($attributes as $attribute) {
+							// 	echo '<span class="size">Size:</span> ' . $attribute['value'] . '<br>';
 
-								echo '<span class="color">Color:</span> ' . $attribute['value'] . '<br>';
-							}
+							// 	echo '<span class="color">Color:</span> ' . $attribute['value'] . '<br>';
+							// }
 
 							echo '<span class="total-price">Total:</span> ' . apply_filters('woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal($_product, $cart_item['quantity']), $cart_item, $cart_item_key); // PHPCS: XSS ok.
 							?>

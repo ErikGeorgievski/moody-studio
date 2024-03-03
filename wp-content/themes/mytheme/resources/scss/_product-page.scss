@@ -96,6 +96,9 @@
                             line-height: 18.75px;
                             margin-left: -4px;
                         }
+                        .reset_variations{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -104,6 +107,14 @@
                 padding-top: 10px;
                 .quantity{
                     display: none;
+                }
+                .woocommerce-variation-add-to-cart{
+                    .quantity{
+                        input{
+                            display: none;
+
+                        }
+                    }
                 }
                 .single_add_to_cart_button{
                     width: 416px;
@@ -150,7 +161,6 @@
                     font-size: 18px;
                     line-height: 21.09px;
                     color: rgba(0, 0, 0, 0.5);
-                    margin-top: -10px;
                     .sku-text{
                         color: #000000;
                     }

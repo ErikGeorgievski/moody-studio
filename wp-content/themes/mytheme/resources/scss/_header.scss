@@ -7,6 +7,7 @@ header{
     flex-direction: column;
     background-color: transparent;
     margin: auto;
+    
 
     .upper-header{
         width: 100%;
@@ -18,6 +19,49 @@ header{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            #search-bar{
+                position: relative;
+                top: 10%;
+                #searchform{
+                    input{
+                        width: 220px;
+                        height: 30px;
+                        padding: 20px;
+                    }
+                }
+                #search-results{
+                    background-color: #f4f4f4;
+                    height: auto;
+                    
+                    .search-result{
+                        display: flex;
+                        padding-bottom: 15px;
+                        align-items: center;
+                        &:hover{
+                            background-color: #f0efef;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            text-decoration: none;
+                            font-family: $regular-font;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 21.08px;
+                            color: $primary-font-color;
+                            .product-title{
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                            img{
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                       
+                    }
+                }
+            }
             a{
                 text-decoration: none;
                 .logo-text{
@@ -29,6 +73,8 @@ header{
                     
                 }
             }
+
+            
             
             .basket-item-count {
                 background-color: #F2994A;
@@ -68,21 +114,21 @@ header{
                         display: block;
                     }
             
-                    &.search-icon {
-                        a:before {
-                            content: "";
-                            display: inline-block;
-                            width: 27px;
-                            height: 27px;
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            background-image: url("../images/search.svg");
-                            background-size: contain;
-                            background-position: center center;
-                            background-repeat: no-repeat;
-                        }
-                    }
+                    // &.search-icon {
+                    //     a:before {
+                    //         content: "";
+                    //         display: inline-block;
+                    //         width: 27px;
+                    //         height: 27px;
+                    //         position: absolute;
+                    //         top: 50%;
+                    //         transform: translateY(-50%);
+                    //         background-image: url("../images/search.svg");
+                    //         background-size: contain;
+                    //         background-position: center center;
+                    //         background-repeat: no-repeat;
+                    //     }
+                    // }
             
                     &.account-icon {
                         a:before {

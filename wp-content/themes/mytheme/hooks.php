@@ -139,8 +139,8 @@ function custom_related_products_section() {
     ));
     echo '</div>';
     echo '</div>';
-    echo '<button class="prev-arrow">&#10094;</button>';
-    echo '<button class="next-arrow">&#10095;</button>';
+    // echo '<button class="prev-arrow">&#10094;</button>';
+    // echo '<button class="next-arrow">&#10095;</button>';
     echo '</div>';
 }
 add_action('woocommerce_after_single_product_summary', 'custom_related_products_section');

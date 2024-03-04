@@ -165,7 +165,59 @@
                         color: #000000;
                     }
                 }
+                .composition{
+                    font-family: $light-font;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 21.09px;
+                    color: rgba(0, 0, 0, 0.5);
+                    .attribute-name{
+                        color: #000000;
+                    }
+                }
             }
+
+            .woocommerce-Tabs-panel--reviews{
+                .woocommerce-Reviews{
+                    font-family: $regular-font;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21.08px;
+                    color: $primary-font-color;
+
+                    .comment-form{
+                        .comment-form-comment{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        .form-submit{
+                            .submit{
+                                width: 416px;
+                                height: 54px;
+                                background-color: $primary-font-color;
+                                font-family: $bold-font;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 18.75px;
+                                color: #FFFFFF;
+                                text-transform: uppercase;
+                                cursor: pointer;width: 416px;
+                                height: 54px;
+                                background-color: $primary-font-color;
+                                font-family: $bold-font;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 18.75px;
+                                color: #FFFFFF;
+                                text-transform: uppercase;
+                                cursor: pointer;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+
         }
 
         .custom-related-products{

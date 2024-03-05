@@ -24,15 +24,26 @@ $heading = apply_filters( 'woocommerce_product_description_heading', __( 'Descri
 ?>
 
 <?php if ( $heading ) : ?>
-    <!-- <h2><?php echo esc_html( $heading ); ?></h2> -->
+    <h2><?php //echo esc_html( $heading ); ?></h2>
 <?php endif; ?>
 
 <?php
 the_content();
+$product_attributes = wc_get_product($post->ID)->get_attributes();
 
+if (isset($product_attributes['composition'])) {
+    $composition_attribute = $product_attributes['composition'];
+    $composition_label = wc_attribute_label('Composition');
+    $composition_values = $composition_attribute->get_options();
+
+    echo '<p class="composition"><span class="attribute-name">' . esc_html($composition_label) . ' - </span>';
+    echo esc_html(implode(', ', $composition_values)) . '</p>';
+}
 
 $sku = get_post_meta( $post->ID, '_sku', true );
 if ( ! empty( $sku ) ) {
     echo '<p class="sku-p"><span class="sku-text">Art. No. - </span> ' . esc_html( $sku ) . '</p>';
 }
+
+
 ?>

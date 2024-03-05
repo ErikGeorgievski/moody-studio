@@ -5,6 +5,7 @@
     font-size: 34px;
     line-height: 39.84px;
     color: $primary-font-color;
+    text-transform: uppercase;
 }
 
 
@@ -19,9 +20,28 @@ div.woocommerce {
         width: 40%;
         padding-right: 285px;
         .shop_table{
-            border: none;
-            
+            border: none; 
             height: 180px;
+            .cart-subtotal{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 364%;
+                text-align: end;
+                th,td{
+                    font-family: $medium-font;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21.09px;
+                    color: $primary-font-color;
+                }
+                th{
+                    border-top: none;
+                }
+                td{
+                    border-top: 1px solid $primary-font-color;
+                }
+            }
             .actions{
                 border-top: none;
             }
@@ -176,6 +196,12 @@ div.woocommerce {
                         color: $primary-font-color;
                         background-color: #FFFFFF;
                         border: 1px solid $primary-font-color;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease-out;
+                        &:hover{
+                            background-color: $primary-font-color;
+                            color: #fff;
+                        }
                     }
                 }
             }
@@ -211,7 +237,8 @@ div.woocommerce {
                 }
             }
 
-            .wc-proceed-to-checkout{               
+            .wc-proceed-to-checkout{
+                padding-top: 50px;            
                 a{
                     display: flex;
                     justify-content: center;

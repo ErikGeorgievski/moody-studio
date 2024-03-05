@@ -188,6 +188,13 @@ do_action('woocommerce_before_cart'); ?>
 			</tr>
 
 			<?php do_action('woocommerce_after_cart_contents'); ?>
+			<!-- Your custom total value -->
+			<tr class="cart-subtotal">
+				<th><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+				<td data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>"><?php wc_cart_totals_subtotal_html(); ?></td>
+			</tr>
+
+<?php do_action('woocommerce_cart_totals'); ?>
 		</tbody>
 	</table>
 	<?php do_action('woocommerce_after_cart_table'); ?>

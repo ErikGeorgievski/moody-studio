@@ -1,4 +1,4 @@
-header{
+header {
     width: $content-width;
     height: auto;
     justify-content: space-between;
@@ -8,28 +8,93 @@ header{
     background-color: transparent;
     margin: auto;
 
-    .upper-header{
+
+    .upper-header {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        .column-50{
+
+        .column-50 {
             width: 50%;
             height: 100px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            a{
+
+            #search-bar {
+                padding-top: 15px;
+                position: relative;
+            }
+            #searchform{
+                position: absolute;
+                top: 0;
+                right: 120;
+            }
+            #search-results{
+                position: absolute;
+                top: 30;
+                right: 120;
+                width: 250px;
+            }
+
+            #searchform input {
+                width: 220px;
+                height: 30px;
+                padding: 10px;
+            }
+
+            #search-results {
+                background-color: #f4f4f4;
+            }
+
+            .search-result {
+                display: flex;
+                align-items: center;
+                padding-bottom: 15px;
+            }
+
+            .search-result:hover {
+                background-color: #f0efef;
+            }
+
+            .search-result a {
+                display: flex;
+                align-items: center;
                 text-decoration: none;
-                .logo-text{
+                font-family: $regular-font;
+                /* Use your actual font variable */
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21.08px;
+                color: $primary-font-color;
+                /* Use your actual color variable */
+            }
+
+            .search-result .product-title {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .search-result img {
+                width: 50px;
+                height: 50px;
+            }
+
+            a {
+                text-decoration: none;
+
+                .logo-text {
                     font-family: $bold-font;
                     font-weight: 700;
                     font-size: 28px;
                     line-height: 32.81px;
                     color: $primary-font-color;
-                    
+
                 }
             }
-            
+
+
+
             .basket-item-count {
                 background-color: #F2994A;
                 color: #fff;
@@ -42,48 +107,53 @@ header{
                 position: relative;
                 top: 8px;
                 right: 130px;
-                
+
             }
-    
+
             nav {
                 display: flex;
-                align-items: center; 
-                margin-left: auto; 
+                align-items: center;
+                margin-left: auto;
                 position: relative;
-            
+
+                #search-icon {
+                    padding-right: 50px;
+                    cursor: pointer;
+                }
+
                 ul {
                     list-style: none;
                     margin: 0;
                     padding: 0;
-                    display: flex; 
+                    display: flex;
                     position: relative;
                 }
-            
+
                 li {
                     margin-right: 50px;
-            
+
                     a {
                         color: transparent;
                         font-size: 6px;
                         display: block;
                     }
-            
-                    &.search-icon {
-                        a:before {
-                            content: "";
-                            display: inline-block;
-                            width: 27px;
-                            height: 27px;
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            background-image: url("../images/search.svg");
-                            background-size: contain;
-                            background-position: center center;
-                            background-repeat: no-repeat;
-                        }
-                    }
-            
+
+                    // &.search-icon {
+                    //     a:before {
+                    //         content: "";
+                    //         display: inline-block;
+                    //         width: 27px;
+                    //         height: 27px;
+                    //         position: absolute;
+                    //         top: 50%;
+                    //         transform: translateY(-50%);
+                    //         background-image: url("../images/search.svg");
+                    //         background-size: contain;
+                    //         background-position: center center;
+                    //         background-repeat: no-repeat;
+                    //     }
+                    // }
+
                     &.account-icon {
                         a:before {
                             content: "";
@@ -114,7 +184,7 @@ header{
                             background-position: center center;
                             background-repeat: no-repeat;
                         }
-                        
+
                     }
 
                     &.favorites-icon {
@@ -134,37 +204,38 @@ header{
                     }
                 }
             }
-            
-            
+
+
         }
     }
 
-    .lower-header{
+    .lower-header {
         width: 100%;
         border-top: 1px solid $header-border-lines;
         border-bottom: 1px solid $header-border-lines;
-        nav{
+
+        nav {
             display: flex;
-            align-items: center; 
-            margin: auto; 
+            align-items: center;
+            margin: auto;
             text-align: center;
             justify-content: center;
             height: 95px;
 
-            ul{
+            ul {
                 list-style: none;
                 margin: 0;
                 padding: 0;
-                display: flex; 
+                display: flex;
             }
 
-            li{
+            li {
                 margin-right: 25px;
                 text-transform: uppercase;
                 margin-left: 55px;
             }
 
-            a{
+            a {
                 text-decoration: none;
                 color: $primary-font-color;
                 font-family: $bold-font;
@@ -174,12 +245,12 @@ header{
                 font-weight: 500;
                 transition: color 0.3s ease;
 
-                &:hover{
+                &:hover {
                     color: rgb(104, 104, 104);
                 }
             }
 
         }
     }
-    
+
 }

@@ -37,3 +37,30 @@ jQuery(document).ready(function($) {
         $(this).prepend('<option value="">' + newText + '</option>');
     });
 });
+
+
+jQuery(document).ready(function($) {
+    $('#search-icon').click(function() {
+        $('#search-bar').toggle();
+    });
+
+    $('#search-input').on('input', function() {
+        var query = $(this).val();
+        if (query.length > 2) {
+            $.ajax({
+                url: ajax_variables.ajaxUrl,
+                type: 'POST',
+                data: {
+                    action: 'custom_product_search',
+                    query: query
+                },
+                success: function(response) {
+                    $('#search-results').html(response);
+                }
+            });
+        } else {
+            $('#search-results').html('');
+        }
+    });
+});
+

@@ -49,7 +49,7 @@ function custom_product_search() {
     }
     
      else {
-        echo 'No products found';
+        echo 'No products found :( ';
     }
     wp_reset_postdata();
     die();

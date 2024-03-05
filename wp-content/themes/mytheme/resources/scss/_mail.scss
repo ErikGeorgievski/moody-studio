@@ -1,0 +1,24 @@
+#template_container{
+    background-color: aqua;
+    tbody{
+        background-color: aqua;
+        tr{
+            background-color: aqua;
+            td{
+                background-color: aqua;
+                #template_header{
+                    background-color: aqua;
+                    #header_wrapper{
+                        background-color: aqua;
+                        h1{
+                            color:red;                
+                        }
+                    }
+                }
+                
+
+            }
+        }
+    }
+
+}

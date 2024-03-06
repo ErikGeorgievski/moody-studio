@@ -11,7 +11,10 @@
                     #header_wrapper{
                         background-color: aqua;
                         h1{
-                            color:red;                
+                            color:red;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;                
                         }
                     }
                 }

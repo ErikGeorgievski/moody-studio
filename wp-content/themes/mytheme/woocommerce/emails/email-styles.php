@@ -79,6 +79,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
+
 #template_header h1,
 #template_header h1 a {
 	color: <?php echo esc_attr( $base_text ); ?>;
@@ -186,17 +187,20 @@ body {
 }
 
 #header_wrapper {
-	padding: 36px 48px;
-	display: block;
-	font-size: 60px;
-	background-color:#FFFFFF80;
+	padding-top:60px;
+	padding-bottom:60px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size: 24px;
+	background-color:#323334;
 
 }
 
 h1 {
 	color: <?php echo esc_attr( $base ); ?>;
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-	font-size: 60px;
+	font-size: 24px;
 	font-weight: 300;
 	line-height: 150%;
 	margin: 0;

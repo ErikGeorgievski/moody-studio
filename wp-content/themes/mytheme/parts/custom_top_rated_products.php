@@ -17,21 +17,20 @@ function display_top_rated_products_shortcode($atts) {
     'order' => 'DESC',
   );
 
-  $query = new WP_Query($args);
-
-  // Replace with the path to your custom template
   $custom_template = get_template_directory() . '/custom-product-display.php';
+  var_dump($custom_template);
 
-  // Check if the custom template exists
   if (file_exists($custom_template)) {
+    // Include the custom template without passing the $query variable
     include($custom_template);
   } else {
-    // Fallback to default behavior if template not found
+    // Display error message if template file is not found
     echo '<p>Custom template not found.</p>';
+    // Additionally, display the path we're looking for
+    echo '<p>Looking for template at: ' . $custom_template . '</p>';
   }
 
-  // Unhook and re-enable styles
-  remove_filter('template_include', 'empty_template_for_shortcode');
+  // Remove WooCommerce styles filter
   remove_filter('woocommerce_enqueue_styles', '__return_false');
 
   $output = ob_get_clean();

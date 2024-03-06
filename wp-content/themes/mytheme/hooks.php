@@ -154,3 +154,12 @@ function remove_default_product_meta() {
 }
 add_action( 'woocommerce_single_product_summary', 'remove_default_product_meta', 5 );
 
+
+add_filter('woocommerce_get_breadcrumb', 'customize_cart_breadcrumb');
+
+function customize_cart_breadcrumb($breadcrumb) {
+    if (is_cart()) {
+        $breadcrumb[count($breadcrumb) - 1][0] = "shopping Bag";
+    }
+    return $breadcrumb;
+}

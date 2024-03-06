@@ -44,7 +44,7 @@ $text_lighter_40 = wc_hex_lighter( $text, 40 );
 // body{padding: 0;} ensures proper scale/positioning of the email in the iOS native email app.
 ?>
 body {
-	background-color:#FFFFFF80;
+	background-color: <?php echo esc_attr( $bg ); ?>;
 	padding: 0;
 	text-align: center;
 }
@@ -59,12 +59,13 @@ body {
 	-webkit-text-size-adjust: none !important;
 	width: 100%;
 	max-width: 600px;
+	border:10 px solid black;
 }
 
 #template_container {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
 	background-color: <?php echo esc_attr( $body ); ?>;
-	border:none
+	border: 1px solid <?php echo esc_attr( $bg_darker_10 ); ?>;
 	border-radius: 3px !important;
 }
 
@@ -79,11 +80,11 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
-
 #template_header h1,
 #template_header h1 a {
 	color: <?php echo esc_attr( $base_text ); ?>;
 	background-color: inherit;
+	
 }
 
 #template_header_image img {
@@ -94,7 +95,6 @@ body {
 #template_footer td {
 	padding: 0;
 	border-radius: 6px;
-	border: 2px dotted #ccc;
 }
 
 #template_footer #credit {
@@ -112,9 +112,7 @@ body {
 }
 
 #body_content {
-	background-color: #DCE1DA;
-	color : #000;
-	font-weight: bold;
+	background-color: <?php echo esc_attr( $body ); ?>;
 }
 
 #body_content table td {
@@ -159,20 +157,20 @@ body {
 
 .td {
 	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
-	border: 2px dotted #ccc;
+	border: 1px solid <?php echo esc_attr( $body_darker_10 ); ?>;
 	vertical-align: middle;
 }
 
 .address {
 	padding: 12px;
-	border: none;
-	
+	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
+	border: 1px solid <?php echo esc_attr( $body_darker_10 ); ?>;
 }
 
 .additional-fields {
 	padding: 12px 12px 0;
 	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
-	border: 2px dotted #ccc;
+	border: 1px solid <?php echo esc_attr( $body_darker_10 ); ?>;
 	list-style: none outside;
 }
 
@@ -190,27 +188,19 @@ body {
 }
 
 #header_wrapper {
-	padding-top:60px;
-	padding-bottom:60px;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	font-size: 24px;
-	background-color:#323334;
-
+	padding: 36px 48px;
+	display: block;
 }
 
 h1 {
 	color: <?php echo esc_attr( $base ); ?>;
-	font-weight: bold;
-
-	font-size: 24px;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-size: 30px;
 	font-weight: 300;
 	line-height: 150%;
 	margin: 0;
 	text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
 	text-shadow: 0 1px 0 <?php echo esc_attr( $base_lighter_20 ); ?>;
-	font-family: monospace;
 }
 
 h2 {

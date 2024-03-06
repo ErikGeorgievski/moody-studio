@@ -80,5 +80,5 @@ if (!defined('ABSPATH')) {
 														<table border="0" cellpadding="20" cellspacing="0" width="100%">
 															<tr>
 																<td valign="top">
-																	im
+																	<img src="../resources/images/img0101.png" alt="">
 																	<div id="body_content_inner">

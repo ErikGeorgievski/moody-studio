@@ -244,7 +244,7 @@ if ( ! class_exists( 'WC_Payments_Email_IPP_Receipt' ) ) :
 		 * @return string
 		 */
 		public function get_default_additional_content(): string {
-			return __( 'Thanks for using {site_url}!', 'woocommerce-payments' );
+			return __( 'Thanks for buying at MoodyStore!!', 'woocommerce-payments' );
 		}
 
 	}

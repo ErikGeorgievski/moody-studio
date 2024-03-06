@@ -66,7 +66,7 @@ if ( ! class_exists( 'WC_Email_Customer_Processing_Order', false ) ) :
 		 * @return string
 		 */
 		public function get_default_heading() {
-			return __( 'Thank you for your order', 'woocommerce' );
+			return __( 'Thank you for your order at MoodyStore', 'woocommerce' );
 		}
 
 		/**
@@ -141,7 +141,7 @@ if ( ! class_exists( 'WC_Email_Customer_Processing_Order', false ) ) :
 		 * @return string
 		 */
 		public function get_default_additional_content() {
-			return __( 'Thanks for using {site_url}!', 'woocommerce' );
+			return __( 'Thanks for buying at MoodyStore!', 'woocommerce' );
 		}
 	}
 

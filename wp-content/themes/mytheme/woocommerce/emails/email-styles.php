@@ -112,7 +112,7 @@ body {
 }
 
 #body_content {
-	background-color: #DCE1DA;
+	background-color: #eae9e78e;
 	color : #000;
 	font-weight: bold;
 }

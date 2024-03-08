@@ -292,6 +292,9 @@ main{
                 height: 566px;
                 width: 33%;
                 padding-right: 60px;
+                a{
+                    text-decoration: none;
+                }
                 h2{
                     font-family: $bold-font;
                     font-weight: 700;

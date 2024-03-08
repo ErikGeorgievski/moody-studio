@@ -33,18 +33,21 @@ function display_products_by_title_shortcode($atts) {
         echo '<div class="three-products-columns">';
         while ($products_query->have_posts()) {
             $products_query->the_post();
+            $product_permalink = get_permalink();
             ?>
             <div class="product"> 
-                <div class="product-image">
-                    <?php the_post_thumbnail('thumbnail'); ?>
-                </div>
-                <h2><?php the_title(); ?></h2>
-                <div class="product-rating">
-                    <?php echo my_theme_stars_rating(); ?>
-                </div>
-                <div class="product-price">
-                    <?php echo wc_price(get_post_meta(get_the_ID(), '_price', true)); ?>
-                </div>
+                <a href="<?php echo $product_permalink; ?>">
+                    <div class="product-image">
+                        <?php the_post_thumbnail('thumbnail'); ?>
+                    </div>
+                    <h2><?php the_title(); ?></h2>
+                    <div class="product-rating">
+                        <?php echo my_theme_stars_rating(); ?>
+                    </div>
+                    <div class="product-price">
+                        <?php echo wc_price(get_post_meta(get_the_ID(), '_price', true)); ?>
+                    </div>
+                </a> <!-- Closing anchor tag -->
             </div>
             <?php
         }
